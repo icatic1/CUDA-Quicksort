@@ -1,0 +1,76 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Msbuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(498,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Msbuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+          1 file(s) copied.
+  Compiling CUDA source file src\FPGquicksort.cu...
+  Compiling CUDA source file src\testSorter.cu...
+  Compiling CUDA source file src\scan.cu...
+  
+  
+  C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_50,code=\"sm_50,compute_50\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64" -x cu   -Ilibraries/include/ -Ilibraries/include/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FdC:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\Debug_win\x64\proj\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\x64\Debug\scan.cu.obj "C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\scan.cu" 
+  C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_50,code=\"sm_50,compute_50\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64" -x cu   -Ilibraries/include/ -Ilibraries/include/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FdC:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\Debug_win\x64\proj\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\x64\Debug\testSorter.cu.obj "C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\testSorter.cu" 
+  
+  C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\nvcc.exe" -gencode=arch=compute_50,code=\"sm_50,compute_50\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX64\x64" -x cu   -Ilibraries/include/ -Ilibraries/include/ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /FdC:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\Debug_win\x64\proj\vc142.pdb /FS /Zi /RTC1 /MDd " -o C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\x64\Debug\FPGquicksort.cu.obj "C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu" 
+  scan.cu
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(515): warning #69-D: integer conversion resulted in truncation
+            detected during:
+              instantiation of "void init(Type *, Block<Type> *, uint *, int, int) [with Type=uint]" 
+  (573): here
+              instantiation of "void sort(Type *, Type *, uint, uint, int, double *) [with Type=uint]" 
+  (735): here
+  
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(461): warning #69-D: integer conversion resulted in truncation
+            detected during:
+              instantiation of "void bucketAssign(Block<Type> *, uint *, int, int) [with Type=uint]" 
+  (575): here
+              instantiation of "void sort(Type *, Type *, uint, uint, int, double *) [with Type=uint]" 
+  (735): here
+  
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(481): warning #69-D: integer conversion resulted in truncation
+            detected during:
+              instantiation of "void bucketAssign(Block<Type> *, uint *, int, int) [with Type=uint]" 
+  (575): here
+              instantiation of "void sort(Type *, Type *, uint, uint, int, double *) [with Type=uint]" 
+  (735): here
+  
+  FPGquicksort.cu
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(669): warning C4018: '>': signed/unsigned mismatch
+  C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(735): note: see reference to function template instantiation 'void sort<unsigned int>(Type *,Type *,uint,uint,int,double *)' being compiled
+          with
+          [
+              Type=unsigned int
+          ]
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\FPGquicksort.cu(680): warning C4018: '>': signed/unsigned mismatch
+  testSorter.cu
+  main.cpp
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\main.cpp(142,35): warning C4838: conversion from 'double' to 'unsigned int' requires a narrowing conversion
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\main.cpp(142,35): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(20,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(68): message : see reference to function template instantiation 'void uniform<Type>(Type *,int)' being compiled
+          with
+          [
+              Type=Type
+          ]
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\main.cpp(108): message : see reference to function template instantiation 'void distribution<Type>(Type *,int,std::string &)' being compiled
+          with
+          [
+              Type=Type
+          ]
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(39,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(75): message : see reference to function template instantiation 'void inverseSorted<Type>(Type *,int)' being compiled
+          with
+          [
+              Type=Type
+          ]
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(49,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\src\randomDistr.h(83): message : see reference to function template instantiation 'void gaussian<Type>(Type *,int)' being compiled
+          with
+          [
+              Type=Type
+          ]
+mergeSort.lib(mergeSort.cu.obj) : warning LNK4078: multiple '.nv_fatbin' sections found with different attributes (C0500040)
+mergeSort.lib(mergeSort.cu.obj) : warning LNK4078: multiple '.nvFatBinSegment' sections found with different attributes (C0400040)
+  cuda-quickSort.vcxproj -> C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\Debug_win\x64\cuda-quickSort.exe
+  copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart*.dll" "C:\Users\W\Desktop\CITAJ\CUDA-QuickSort_v1.61\Debug_win\x64\"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart32_110.dll
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\cudart64_110.dll
+          2 file(s) copied.
